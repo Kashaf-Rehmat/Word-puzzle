@@ -62,10 +62,10 @@ void showBoard()
     cout << "      ";
     for (int c = 0; c < BOARD_SIZE; c++)
         cout << c + 1 << (c + 1 < 10 ? "  " : " ");
-    cout << "\n    ┌";
+    cout << "\n    ";
     for (int c = 0; c < BOARD_SIZE; c++)
         cout << ----
-    cout << "┐\n";
+    cout << "\n";
 
     for (int r = 0; r < BOARD_SIZE; r++)
     {
@@ -75,7 +75,7 @@ void showBoard()
         {
             cout << board[r][c] << "  ";
         }
-        cout << "│\n";
+        cout << " \n";
     }
 
     cout << "    └";
