@@ -64,7 +64,7 @@ void showBoard()
         cout << c + 1 << (c + 1 < 10 ? "  " : " ");
     cout << "\n    ┌";
     for (int c = 0; c < BOARD_SIZE; c++)
-        cout << "───";
+        cout << ----
     cout << "┐\n";
 
     for (int r = 0; r < BOARD_SIZE; r++)
@@ -82,7 +82,7 @@ void showBoard()
     for (int c = 0; c < BOARD_SIZE; c++)
         cout << "───";
     cout << "┘\n";
-    cout << "  ╚══════════════════════════════════╝\n";
+    cout << " ---------------------------\n";
 }
 
 //  Show main menu 
@@ -118,7 +118,7 @@ void askPlayerName()
 //  Set difficulty (updates attemptsLeft)
 void setDifficulty()
 {
-    cout << "\n  ── Difficulty Levels ──────────────\n";
+    cout << "\n  ----- Difficulty Levels ------n";
     cout << "  1. Easy   (5 attempts)\n";
     cout << "  2. Medium (3 attempts)\n";
     cout << "  3. Hard   (1 attempt )\n";
